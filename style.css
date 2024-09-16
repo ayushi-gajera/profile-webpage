@@ -73,6 +73,9 @@ body {
     line-height: 25px;
     margin-top: 50px;
 }
+.greeting h2{
+    margin-bottom: 10px;
+}
 
 .greeting p {
     font-size: 14px;
@@ -107,10 +110,25 @@ body {
     border-radius: 5px;
 }
 
+.help-btn:hover {
+    background-color: rgba(124, 124, 124, 0.2);
+    transition: 0.5s;
+}
+
 .help i {
     margin-right: 30px;
     font-size: 20px;
     color: rgb(232, 227, 227);
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: rgb(231, 208, 35);
+    position: absolute;
+    left: 85.2%;
+    top: 13%;
 }
 
 .completion-card {
@@ -141,7 +159,7 @@ body {
     border: 5px solid orange;
     border-radius: 80%;
     position: absolute;
-    left: 66.2%;
+    left: 64.5%;
     border-top-color: rgb(169, 169, 169);
     rotate: 45deg;
 }
@@ -205,6 +223,11 @@ body {
     margin-right: 20px;
     text-decoration: none;
     font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #000;
+    font-weight: 600;
 }
 
 .claim-btn {
@@ -368,10 +391,11 @@ body {
 .profile h5 {
     margin-left: 40px;
     color: #000;
+    margin-bottom: 5px;
 }
 
 .profile ul {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .account ul li {
@@ -385,11 +409,15 @@ body {
     font-weight: 700;
 }
 
+.profile ul li:last-child {
+    display: flex;
+}
+
 .btn button {
     font-size: 1rem;
     background-color: #FCA424;
-    padding: 1px 20px;
-    margin-left: 13rem;
+    padding: 3px 20px;
+    margin-left: 2.5rem;
     border-radius: 2px;
     border: none;
     font-size: 12px;
@@ -400,6 +428,10 @@ body {
 .btn button:hover {
     background-color: #f3970e;
     transition: 0.5s;
+}
+
+.personImage {
+    object-fit: cover;
 }
 
 /* Activity */
@@ -419,6 +451,7 @@ body {
 
 .activity-history {
     height: 33rem;
+    border-left: 1px solid rgb(235, 235, 233);
     overflow-y: scroll;
 }
 
