@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background-image: url(./images/background_image.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ body {
 }
 
 .profile-img {
-    width: 180px;
+    width: 200px;
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
@@ -73,7 +73,8 @@ body {
     line-height: 25px;
     margin-top: 50px;
 }
-.greeting h2{
+
+.greeting h2 {
     margin-bottom: 10px;
 }
 
@@ -127,7 +128,7 @@ body {
     border-radius: 50%;
     background-color: rgb(231, 208, 35);
     position: absolute;
-    left: 89%;
+    left: 81%;
     top: 12%;
 }
 
@@ -135,16 +136,15 @@ body {
     display: flex;
     background-color: rgba(255, 255, 255, 0.292);
     border-radius: 5px;
-    padding: 30px;
+    padding: 12px;
     margin-right: 15px;
-    gap: 15px;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .progress-circle {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.292);
     display: flex;
@@ -154,20 +154,20 @@ body {
 }
 
 .border-progress {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: 5px solid orange;
     border-radius: 80%;
     position: absolute;
-    left: 64.5%;
+    /* left: 72.5%; */
     border-top-color: rgb(169, 169, 169);
     rotate: 45deg;
 }
 
 .progress-text {
     position: absolute;
-    font-size: 18px;
-    color: #333;
+    font-size: 12px;
+    color: #ffffff;
 }
 
 .completion-info {
@@ -176,12 +176,12 @@ body {
 
 .completion-info h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .completion-info p {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 11px;
     color: rgb(202, 201, 201);
 }
 
@@ -189,11 +189,12 @@ body {
     margin-top: 30px;
     background-color: orange;
     border: none;
-    color: rgb(232, 227, 227);
-    padding: 10px 20px;
+    color: rgb(254, 254, 254);
+    padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 11px;
 }
 
 .complete-btn:hover {
@@ -217,6 +218,11 @@ body {
     color: #000;
 }
 
+.nav-links a:first-child {
+    padding-bottom: 18px;
+    border-bottom: 3px solid orange;
+}
+
 .nav-links a {
     text-transform: uppercase;
     color: #a3a1a1;
@@ -227,7 +233,10 @@ body {
 
 .nav-links a:hover {
     color: #000;
+    border-bottom: 3px solid orange;
     font-weight: 600;
+    padding-bottom: 18px;
+    transition: all 0.5s;
 }
 
 .claim-btn {
@@ -280,7 +289,7 @@ body {
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    border: 3px solid #fdf2e9;
+    object-fit: cover;
 }
 
 .details h5 {
@@ -304,16 +313,15 @@ body {
     display: flex;
     gap: 2rem;
     position: relative;
-    left: 35%;
+    left: 36%;
     top: -2.5%;
 }
 
 .card-claim {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     width: 250px;
     box-shadow: rgba(149, 157, 165, 0.15) 0px 4px 30px;
-    padding: 8px;
 }
 
 .claim-no {
@@ -322,6 +330,8 @@ body {
     display: flex;
     align-items: center;
     border-right: 1px solid rgba(0, 0, 0, 0.037);
+    font-family: "Dosis", sans-serif;
+    padding: 15px;
 }
 
 .card-person-img {
@@ -338,7 +348,6 @@ body {
 
 .card-person-img .person {
     display: flex;
-    object-fit: cover;
 }
 
 .card-person-img .personImg {
@@ -348,27 +357,54 @@ body {
     border-radius: 50%;
     margin-right: -1rem;
     margin-top: -6px;
-    border: 1px solid #d7d7d7;
+    border: 3px solid white;
 }
 
 .personImg-text {
+    position: absolute;
     font-size: 10px;
     color: #FEFEFE;
-    background-color: #0dd39eaf;
+    background-color: rgba(13, 211, 158, 0.4);
     padding: 13px 8px;
     margin-top: -6px;
     border-radius: 50%;
+    left: 23.3%;
+}
+
+
+.personImg-text-2 {
+    position: absolute;
+    font-size: 10px;
+    color: #FEFEFE;
+    background-color: rgba(13, 211, 158, 0.4);
+    padding: 13px 8px;
+    margin-top: -6px;
+    border-radius: 50%;
+    left: 58%;
+}
+
+
+.personImg-text-3 {
+    position: absolute;
+    font-size: 10px;
+    color: #FEFEFE;
+    background-color: rgba(13, 211, 158, 0.4);
+    padding: 13px 8px;
+    margin-top: -6px;
+    border-radius: 50%;
+    left: 94.3%;
 }
 
 /* Other Profiles */
 
 .otherProfiles {
     position: relative;
-    right: 100%;
+    right: 98%;
     top: 3%;
 }
 
 .account {
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.09) 1px 1px 10px;
     color: #cdcdcd;
     padding: 2.2rem;
@@ -416,8 +452,8 @@ body {
 .btn button {
     font-size: 1rem;
     background-color: #FCA424;
-    padding: 3px 20px;
-    margin-left: 2.5rem;
+    padding: 5px 8px;
+    margin-left: 6rem;
     border-radius: 2px;
     border: none;
     font-size: 12px;
@@ -432,6 +468,7 @@ body {
 
 .personImage {
     object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Activity */
@@ -439,20 +476,23 @@ body {
 .activity {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 10px;
     color: #cdcdcd;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     margin: 2rem 3.2rem 0 0;
     position: relative;
     top: -44.2%;
     height: 27.9rem;
-    left: 6%;
-    width: 16rem;
+    left: 8%;
+    width: 15.7rem;
     overflow: hidden;
 }
 
 .activity-history {
     height: 33rem;
+    margin-top: 20px;
+    margin-left: 10px;
     border-left: 1px solid rgb(235, 235, 233);
     overflow-y: scroll;
+    position: relative;
 }
 
 .activity-history::-webkit-scrollbar {
@@ -460,8 +500,7 @@ body {
 }
 
 .activity-history::-webkit-scrollbar-track {
-    margin-top: 10px;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 .activity-history::-webkit-scrollbar-thumb {
@@ -471,31 +510,63 @@ body {
 }
 
 .activity-heading {
-    color: #a3a1a1;
+    color: #cdcdcd;
     padding-bottom: 12px;
     border-bottom: 1px solid rgb(166, 166, 166);
+    position: relative;
 }
 
 .activity-details:last-child {
     margin-bottom: 3rem;
 }
 
+.activity-details ul {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
 .activity-details li {
     list-style: none;
-    padding-left: 1.3rem;
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.5;
-    margin-left: 17px;
+    margin-left: 19px;
+    max-width: 10rem;
 }
 
 .activity-details li:first-child {
-    list-style-type: disc;
+    list-style-type: none;
     margin-top: 20px;
     color: #676767;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
-li::marker {
-    color: orange;
+.activity-details li .blue-dot {
+    height: 10px;
+    margin-top: 5px;
+    width: 10px;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+}
+
+.activity-details li .orange-dot {
+    height: 10px;
+    margin-top: 5px;
+    width: 10px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+}
+
+.activity-details li .green-dot {
+    height: 10px;
+    margin-top: 5px;
+    width: 10px;
+    background-color: rgb(5, 167, 167);
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
 }
