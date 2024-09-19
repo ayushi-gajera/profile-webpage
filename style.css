@@ -127,9 +127,9 @@ body {
     width: 7px;
     border-radius: 50%;
     background-color: rgb(231, 208, 35);
-    position: absolute;
-    left: 82%;
-    top: 12%;
+    position: relative;
+    left: -16.8%;
+    top: -10%;
 }
 
 .completion-card {
@@ -161,7 +161,7 @@ body {
     position: absolute;
     border-top-color: rgb(169, 169, 169);
     rotate: 45deg;
-    left: 73.3%;
+    margin-left: -10px;
 }
 
 .progress-text {
