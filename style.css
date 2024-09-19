@@ -159,7 +159,6 @@ body {
     border: 5px solid orange;
     border-radius: 80%;
     position: absolute;
-    /* left: 72.5%; */
     border-top-color: rgb(169, 169, 169);
     rotate: 45deg;
 }
